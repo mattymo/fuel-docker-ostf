@@ -19,7 +19,8 @@ RUN yum --quiet install -y nginx python-fuelclient supervisor postgresql-libs py
 ADD etc /etc
 ADD var /var
 
-ADD site.pp /root/site.pp
+RUN cp /etc/puppet/modules/nailgun/examples/ostf-only.pp /root/site.pp
+#ADD site.pp /root/site.pp
 RUN puppet apply -d -v /root/site.pp
 
 RUN mkdir -p /usr/local/bin
