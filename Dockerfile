@@ -13,8 +13,8 @@ RUN yum-config-manager --add-repo=http://srv11-msk.msk.mirantis.net/fwm/4.1/cent
 RUN yum-config-manager --add-repo=http://osci-obs.vm.mirantis.net:82/centos-fuel-4.0.1-eggs/centos/ --save
 RUN rm -f /etc/yum.repos.d/CentOS*
 RUN sed -i 's/gpgcheck=1/gpgcheck=0/' /etc/yum.repos.d/* /etc/yum.conf
-RUN yum --quiet install -y puppet python-pip rubygems-openstack ruby-devel-1.8.7.352
-RUN yum --quiet install -y nginx python-fuelclient supervisor postgresql-libs python-virtualenv postgresql-devel rsyslog fence-agents gcc gcc-c++ make
+RUN yum --quiet install -y puppet python-pip rubygems-openstack
+RUN yum --quiet install -y nginx python-fuelclient supervisor postgresql-libs rsyslog fence-agents
 
 ADD etc /etc
 

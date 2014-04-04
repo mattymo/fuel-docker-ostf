@@ -15,10 +15,5 @@ ADMIN_NETWORK:
   static_pool_end: 10.20.0.120
   dhcp_pool_start: 10.20.0.130
   dhcp_pool_end: 10.20.0.254
-rh_username: 888Mirantis
-rh_password: Mira1234
-deployment_mode: rpmcache
-deployment_id: rpmcache
-uid: master
 TEST_DNS: www.google.com
 production: docker-build

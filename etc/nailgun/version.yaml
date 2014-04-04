@@ -1,4 +1,5 @@
 VERSION:
+  production: "docker-build"
   release: "4.1"
   build_number: "95"
   build_id: "2014-02-06_15-07-22"
