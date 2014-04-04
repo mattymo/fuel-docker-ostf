@@ -17,7 +17,6 @@ RUN yum --quiet install -y puppet python-pip rubygems-openstack ruby-devel-1.8.7
 RUN yum --quiet install -y nginx python-fuelclient supervisor postgresql-libs python-virtualenv postgresql-devel rsyslog fence-agents gcc gcc-c++ make
 
 ADD etc /etc
-ADD var /var
 
 RUN cp /etc/puppet/modules/nailgun/examples/ostf-only.pp /root/site.pp
 #ADD site.pp /root/site.pp
